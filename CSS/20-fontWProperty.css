@@ -1,0 +1,19 @@
+/* By Default font-weight for paragreaph is - normal & which has value - 400 */
+p{
+    font-weight: 400; 
+}
+
+/* Making Bold - 700 */
+p{
+    font-weight: bold;
+}
+
+/* Default font weight for heading is - bold(700) */
+h1{
+    font-weight: 400;
+    /* font-weight: normal; */
+    font-weight: 300;
+}
+
+
+/* For google font we can add many font-weight by selecting there . as well add font-style like italic */

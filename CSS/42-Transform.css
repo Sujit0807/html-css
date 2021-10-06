@@ -1,0 +1,59 @@
+/* ----------------------------------------------------------------------------------------------
+Transform :  with help of this property we can do things like - up-down/Scale/rotate/translate/skew 
+----------------------------------------------------------------------------------------------*/
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(151, 141, 218);
+    margin: 100px auto;
+
+    transition: transform 1s ease-in-out;
+}
+
+
+.box:hover {
+    transform-origin: top left;
+
+    /* shift origin to 10px from right to left and 20px top to bottomS  */
+    transform-origin: 70px 70px; 
+    transform-origin: 0% 100%;
+
+    transform: rotate(360deg);
+
+
+
+    /* increases the width here 2 times */
+    /* transform: scaleX(2);   */
+    /* increases the height here 2 times */
+    /* transform: scaleY(2);  */
+
+    /* increases the both height and width here 2 times */
+    /* transform: scale(2);  
+    transform: scale(1.5,2);   */
+
+
+
+    /* transform: translateX(100px); */
+
+    /* translate 50% of width i.e 50px --> to right side */
+    /* transform: translateX(50%); */
+
+    /* translate 50% of width i.e 50px --> to left side */
+    /* transform: translateX(-50%);
+    
+    transform: translateY(50%);
+    transform: translateY(-50%);
+
+    transform: translate(50px,100px); */
+
+
+
+    /* transform: skewX(20deg);
+    transform: skewY(-20deg);
+
+    transform: skew(-10deg,-10deg); */
+
+}

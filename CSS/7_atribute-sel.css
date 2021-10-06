@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+/* attribute selectors:  use the square brackets for attribute selectors*/
+
+/* wo input tag jisaka type ho text */
+input[type = "text"]{
+   color: rgb(235, 23, 23);
+   background-color: rgb(237, 245, 245);  
+}
+
+input[type = "password"]{
+    color: chartreuse;
+    background-color: aliceblue;
+}
+
+a[href = "https://google.co.in"]{
+    color: red;
+}
+/*but this is tedius to us so. */
+
+/*so we use, changing color of link which has word google */
+a[href *= "google"]{
+    color: red;
+}
+/*  '*'means all href which has word google */
+
+
+/* link in which all href which has starting as- https  changing the color */
+a[href ^= "https" ]{
+    color: rgb(255, 4, 4);
+}
+/*use of caret symbol*/
+
+
+/* changing color of those link which is ending as .com */
+/* use $ symbol */
+a[href $= ".com"]{
+    color: red ;
+}
+

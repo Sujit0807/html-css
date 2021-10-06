@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper {
+    border: 5px solid #222;
+    display: flex;
+}
+
+.box {
+    border: 1px solid #666;
+}
+
+.box-1 {
+    background-color: lightblue;
+}
+.box-2 {
+    background-color: lightcoral;
+}
+.box-3 {
+    background-color: lightcyan;
+}
+.box-4 {
+    background-color: lightgreen;
+}
+.box-5 {
+    background-color: lightsalmon;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------------
+ flex-container : justify-direction : flex-start; (default) --> alligns flex-items towards main axis   
+-------------------------------------------------------------------------------------------------------------------*/
+
+.box-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-between;  /* adds the space between the elements(i.e boxes) */
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    flex-direction: row-reverse;    /* flex direction changes direction of main axis */
+}
+
+
+.box-wrapper {
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    justify-content: flex-end;
+}
+
+.box {
+    width: 200px;   /* for small width it works */
+}

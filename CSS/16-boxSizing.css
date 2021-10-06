@@ -1,0 +1,29 @@
+hr{
+    width: 500px;
+    margin-left: 0px;
+    border: 0.5px dashed black;
+}
+
+/*width-500px + border-10px + padding-40px = Total width*/
+div.box1{
+    width:500px;
+    background-color: lightcoral;
+    border:10px solid black ;
+    padding:40px;
+}
+
+/* -------------------------------------------------------------
+ata mi ji width dili ahe 500px, ti total width asavi. na ki add 
+karun vadhavi , jevadhi dili tevadhich asavi bas i.e 500px 
+----------------------------------------------------------------
+box-sizing
+*/
+
+.box2{
+    width: 500px;
+    background-color: lightcoral;
+    border:10px solid black;
+    padding: 40px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /*vv.imp ani hyachi by default value asate:- content-box*/
+}

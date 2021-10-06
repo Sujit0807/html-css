@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="../F2/thanks.html" method="POST"> 
+        <label for="101">username:</label>
+        <input type="text" id="101" placeholder=" enter username" name="username" required>
+        <br><br>
+
+        <label for="102">email:</label>
+        <input type="email" id="102" placeholder="enter email" name="email"equired>
+        <br><br>
+
+        <label for="103">password:</label>
+        <input type="password" id="103" placeholder="enter password" name="password"  required>
+
+        <br><br>
+
+        
+        <p>Select the Gender</p> <br>
+        <label for="104">Male</label>
+        <input type="radio" name="Gender" id="104" value="Male"> 
+            <!-- value=" " is used for sending data to backend  -->
+        <br><br>
+        <label for="105">Female</label>
+        <input type="radio" name="Gender" id="105" value="Female">
+            <!-- enter value in name same -->
+        <br><br>
+    
+        <label for="106">Other</label>
+        <input type="radio" name="Gender" id="106" value="other">
+
+        <br><br>
+
+        <input type="submit" value="sign in">
+    </form>
+</body>
+</html>

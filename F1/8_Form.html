@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>                              <!-- shortcut= click + alt + click-->
+    <form action="../F2/thanks.html" method="POST">
+
+        <label for="101">Username :</label>
+        <input type="text" id="101"name="Username" placeholder="Enter username " required>
+            <!-- name is for post (http protocol) [url madhe yeto]  -->
+        <br> <br>
+
+        <label for="pass">Password :</label>
+        <input type="password" id="pass" name="Password" placeholder="Enter Passwoard" required>       
+        
+        <!-- shortcut= input:password + tab/Enter -->
+
+        <br> <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="Email" placeholder="Enter email_id" required>
+        <br> <br>
+        
+        <input type="submit" value="Sign in">
+    </form>
+</body>
+</html>

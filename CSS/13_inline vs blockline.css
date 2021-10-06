@@ -1,0 +1,65 @@
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+/*Block Level- 1.h1 to h5 e.g*/
+h1,h2{
+    border: 2px solid red;
+    width: 500px;
+    height: 100px;
+} 
+
+
+/*Inline Level- 1.height and width will not change
+                2.Inline element does'nt have top and bottom margin
+                3.padding will be there for all sides but will mess up the things
+                4.No margin on top and bottom but for left and right there will be the margin
+                4. span , img , a , textarea examples of inline elements
+*/
+a{
+    border: 2px solid blue; 
+    /* width: 100px;
+    height: 200px; */
+    margin:100px; /*no margin on top and bottom;*/
+}
+
+
+/* ---------------------DISPLAY PROPERTY--------------------- */
+
+h1,h2{
+    border: 2px solid red;
+    display: inline; /*changes Block level to inline*/
+    margin:10px; /*no change*/
+    padding: 10px; /*No change*/
+}
+
+a{
+    border: 2px solid blue; 
+    display: block; /*convert Inline to Block Level.Now we can add padding and margin*/
+    padding:10px 20px;
+    margin:20px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    margin: 100px;
+    /* padding: 100px; */
+}

@@ -1,0 +1,17 @@
+/* or use below link instead of writing link in html style tag */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/*above link- for importing fonts from google*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:medium;
+}
+ 
+
+/*for backup helvetica, aerial are present */
+
+/* we can add various fonts from google fonts */
+
+/* after inserting font link then use here font-family given below link */

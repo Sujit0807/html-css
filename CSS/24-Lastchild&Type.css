@@ -1,0 +1,10 @@
+/* last-child - kya ye p parent ka last child hai (see from child)*/
+p:last-child{
+    color: red;
+}
+
+/* last-of-child - iss parent ka last p konasa hai(see from parent) */
+p:last-of-type{
+    color: royalblue;
+}
+ 

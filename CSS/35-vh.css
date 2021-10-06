@@ -1,0 +1,6 @@
+/* we use like this- vh */
+
+.box{
+    height: 100vh;   /* screen ke view ke 100% height*/
+    background: skyblue;
+}

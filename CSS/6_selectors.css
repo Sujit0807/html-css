@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #cdcdcd;
+}
+
+/* imp: 
+wo section jisaki class hai my-article */
+section.my-articles{
+    background-color:#dce7f1;
+}
+
+/* Universal selector: which change all html elements */
+
+
+*{
+    color: rgb(56, 7, 102);
+}     
+
+
+
+/* for all paragraphs */
+p{
+    color: orange;
+}
+
+
+/* for only all paragraph under header tag.
+   space means usake ander */
+header p{
+    color: red;
+}/*called as descendent selectors/competators*/
+
+/* list ke ander jitane bhi 'a' tag */
+li a{
+    color: blue;
+}
+
+section.my-articles h2{
+    color: rgb(12, 223, 12);
+}  
+
+/* it is changing all h2 colors which is under section tag */
+
+
+/* But i want to do this only for all child of section i.e which is directly under section not under article  */
+section.my-articles > h2{
+    color:rgb(206, 30, 206);
+}
+
+
+/* Adjuscent selector :
+    changing color of paragraph which is coming directly after h2 tag*/
+    /* all h2 ke bad me ane wala first paragraph */
+
+h2+p{ 
+    color: rgb(81, 255, 1);
+}
+
+ul+p{
+    color: blueviolet;
+}
+
+/* section which has class my-articles under which paragraph which is coming directly after h2  */
+section.my-articles h2+p{
+    color: cornflowerblue;
+}
+
+
+

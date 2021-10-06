@@ -1,0 +1,29 @@
+/* By Default font-size for paragraph is 16px */
+p{
+    font-size: 20px;
+}
+
+h1{
+   /* font-size: 20px; */
+   text-decoration: underline;
+   text-decoration: underline solid red; 
+   text-decoration: solid underline red; 
+   text-decoration:underline wavy royalblue; 
+   text-decoration: overline wavy red;
+   text-decoration: overline dotted red;
+   text-decoration: line-through solid red;
+}
+/* by default browser give text-decoration to anchor tag as underline */
+
+
+
+/* line-height - height space between two lines
+   word-spacing - space between two words
+   letter-spacing - space between two letters*/
+
+p{
+    font-size: 20px;
+    line-height: 30px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}

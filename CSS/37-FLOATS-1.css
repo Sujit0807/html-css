@@ -1,0 +1,72 @@
+/* floats,flexbox n grids*/
+
+/* float - 1.div left to right arrange karayala use hotat
+           2.float has three values- left, right, none.
+           3.when we float anything it get out of document flow
+
+  clear - 1.clear also has 2 values - left, right.
+          2.if any element is floating above first clear it 
+            then i will start.
+          
+
+
+   concept -  parent div ke ander n div
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+.fav-musicians{
+    border: 10px solid green;
+    /* width: 50%; */
+}
+
+.mozart{
+    width: 45%; /* apne parent ka 50% width*/
+    border: 4px solid red;
+    background-color: lightgoldenrodyellow;
+    float: left;
+}
+
+.beethoven{
+    width: 55%;
+    float: right;
+    background-color: lightgreen;
+    border: 10px solid royalblue;
+}  /* 1.Now both are get out of parent div document flow coz 
+        of float and parent div height became 20px (coz of border).
+      2.also box div starting from right bottom, to fix these 
+        below is step.
+   */
+   
+.box{
+    clear: left;
+    /* float left clear karun zalyavar mi start karto */
+    clear: right;
+    /* float right clear karun zalyavar mi start karto */
+
+    clear: both;
+    /* but mla tar he donhi clear zlayvar start karayachay */
+}
+
+    /* Ata box div ch tar zal pn mg ya donhi mozart and 
+       beethoven div ch kay karaycha, he tar paret chya baher alet.for this we have one trick.
+    */
+
+.clearfix{
+    clear: both;
+}  /* ata te donhi parent chya aat ch rahtil */
+
+
+
+
+
+
+
+
+
+
+
+

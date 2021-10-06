@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper {
+    border: 5px solid #222;
+}
+
+.box {
+    border: 1px solid #666;
+}
+
+.box-1 {
+    background-color: lightblue;
+}
+.box-2 {
+    background-color: lightcoral;
+}
+.box-3 {
+    background-color: lightcyan;
+}
+.box-4 {
+    background-color: lightgreen;
+}
+.box-5 {
+    background-color: lightsalmon;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+flex-items :- flex : it accepts three values as --> flex-grow flex-shrink flex-basis;  --> NO COMMA INBETWEEN
+                     It is the shorthand for all above three
+--------------------------------------------------------------------------------------------------------------------- */
+
+.box-wrapper {
+    display: flex;
+    max-width: 1200px;
+}
+
+.box-1 {
+    flex : 1 2 400px;
+    
+    /* flex: 1;
+    flex: 1 2;
+    flex: 400px */
+}
+.box-2 {
+    flex : 2 1 300px;
+}
+.box-3 {
+    flex : 2 3 200px;
+}

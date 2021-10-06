@@ -1,0 +1,22 @@
+body{
+    color: red;
+}
+
+.container1{
+    color: green;
+}
+
+.container2{
+    color: blue;
+}
+
+h1{
+    color: orange;
+}
+
+/*anchor tag body chi color property inherite nahi karat.
+karan browser aplya kahi value default set karate*/
+a{
+    color:pink;
+    text-decoration: none;
+}

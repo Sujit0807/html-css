@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper {
+    border: 5px solid #222;
+}
+
+.box {
+    border: 1px solid #666;
+}
+
+.box-1 {
+    background-color: lightblue;
+}
+.box-2 {
+    background-color: lightcoral;
+}
+.box-3 {
+    background-color: lightcyan;
+}
+.box-4 {
+    background-color: lightgreen;
+}
+.box-5 {
+    background-color: lightsalmon;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+flex-items : flex-flow : it is a shorthand for two properties - flex-direction and flex-wrap
+--------------------------------------------------------------------------------------------------------------------- */
+.box-wrapper {
+    display: flex;
+
+    /* i.e flex-direction is row and flex-wrap is wrap */
+    flex-flow: row nowrap;  
+    flex-flow: row wrap;  
+
+    height : 200px;
+    flex-flow: column wrap;  
+}
+
+.box {
+    width: 300px;
+}
+
+
+
+
+

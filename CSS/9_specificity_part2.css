@@ -1,0 +1,45 @@
+/* Specificity property : inline style attribute> id Selectors > class Selectors > element/tag Seletors */
+
+
+/*Ex - 1*/
+div#container ul.my-songs li{
+    color: magenta;
+    background-color: #cdcdcd;
+}
+
+/*Ex - 2*/
+.favourite{
+    color: orangered;
+}
+
+div#container ul.my-songs li.favourite{
+    color:red;
+    background-color:yellow;
+}
+
+/* how to calculate specificity */
+
+/* _, _, _, _ */
+
+/*  count no of :
+    1.inline attributes
+    2.id selectors
+    3.class selectors
+    4.element selectors
+*/
+
+/* For Above Example No 1:
+    0,1,1,3 ---> 113 specificity,
+    Here 3 Elements- div,ul,li
+*/
+
+/* For Above Example No 2:
+    0,0,1,0 ---> 10 specificity,   
+*/
+
+/* For Above Example No 3:
+    0,1,2,3 ---> 123 specificity,
+    Here 3 Elements- div,ul,li
+*/
+
+/*Which has more specificity that code will work */

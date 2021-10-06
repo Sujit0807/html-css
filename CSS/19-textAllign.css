@@ -1,0 +1,19 @@
+/* Block Level */
+h1{
+    background-color: rgb(187, 214, 238);
+    /* text-align: center; */
+    width: 500px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Inline Level - 1.for inline element we can't align text , 
+                  coz we don't have that much width
+                  2.now display is inline block now we can align*/
+a{
+    background: #ffcdcd;
+    text-align: center;
+    display: inline-block;
+    width: 500px;
+}
+

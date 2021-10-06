@@ -1,0 +1,33 @@
+/* em for font-size - 1.it is mostly used while giving padding 
+                        and margin. 
+                      2.it sees to parent font-size (16px by  
+                      default size) and multiply by 2*/
+
+h1{
+    font-size: 2em; /* here, 32px */
+}
+
+.box1{
+    font-size: 20px; /* Now h1 inside this div sees to 
+                        div font-size and then multiply by two
+                        so h1 inside div size become 40px */
+}
+
+
+/* ------------------------------------------------------------
+em unit for border and other property works in different way
+----------------------------------------------------------------*/
+h1{
+    font-size: 2em; 
+
+    border: 2em solid red; /* he pahnar ki hyach h1 element chi 
+    size kiti ahe tyala 2 ne multiply karun jevadhi size yeil 
+    tevadhya pixel chi border create karen. i.e  */
+
+    padding: 2em; /*80px for h1 inside div and 64 px for 
+    outside div*/
+}
+
+.box1{
+    font-size: 20px;
+}

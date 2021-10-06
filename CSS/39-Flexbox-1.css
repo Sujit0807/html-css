@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper {
+    border: 10px solid #222;
+}
+
+.box {
+    border: 1px solid #666;
+}
+
+.box-1 {
+    background-color: lightblue;
+}
+.box-2 {
+    background-color: lightcoral;
+}
+.box-3 {
+    background-color: lightcyan;
+}
+.box-4 {
+    background-color: lightgreen;
+}
+.box-5 {
+    background-color: lightsalmon;
+}
+
+
+/* ----------------------------------------------------------------------------
+Flexbox : 1. flexItems        e.g .box-1, .box-2, .box-3
+
+          2. flexContainers   e.g .box-wrapper
+                PROPERTY : 1. flex-direction : row (default)
+---------------------------------------------------------------------------- */
+.box-wrapper {
+    display: flex;          /* creating box wrapper as flexContainer */
+    flex-direction: row;    /* default */ 
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    /* flex-direction: column-reverse; */ 
+} 

@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper {
+    border: 5px solid #222;
+}
+
+.box {
+    border: 1px solid #666;
+}
+
+.box-1 {
+    background-color: lightblue;
+}
+.box-2 {
+    background-color: lightcoral;
+}
+.box-3 {
+    background-color: lightcyan;
+}
+.box-4 {
+    background-color: lightgreen;
+}
+.box-5 {
+    background-color: lightsalmon;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+flex-item : flex-grow : 0; (default value)   --> to utilize the remaining space/ manages remaining space
+--------------------------------------------------------------------------------------------------------------------- */
+
+.box-wrapper {
+    max-width: 1200px;
+    display: flex;
+}
+
+.box {
+    flex-basis: 300px;
+    
+    /* To grow three boxes equally */
+    /* flex-grow: 1; */
+}
+
+.box-1 {
+    flex-grow: 2;
+}
+
+.box-2 {
+    flex-grow: 1;
+}
+
+.box-3 {
+    flex-grow: 1;
+}
+
+/* Understand like that : box-1 takes 50% of white to grow and box-2 and box-3 taking 25% each white space  */

@@ -1,0 +1,57 @@
+
+/* Specificity property :inline style attribute> id Selectors > class Selectors > element Seletors */
+
+
+
+.h1cls{
+    color: blue;
+}
+
+h1{
+    color: green; 
+}
+
+#h1id{
+     color: brown   !important;
+}
+
+/* !important word increases its specificity 
+    but this not good practise*/
+
+
+
+/* 2nd */
+
+.Heading{
+    color: rgb(13, 13, 226);
+} 
+.h1cls{
+    color: brown;
+}
+
+
+
+.h1cls{
+    color: brown;
+}
+.Heading{
+    color: rgb(13, 13, 226);
+} 
+
+
+/* here it is depending upon last we edited color coz both  having same specificity*/
+
+
+
+
+/* 3rd */
+h1.Heading{  /* it has more specificity */
+    color: red;
+}
+.Heading{
+    color: magenta; 
+}
+/* class name may two or more but not id */
+
+
+

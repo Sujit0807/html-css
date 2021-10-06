@@ -1,0 +1,33 @@
+/* Tips :- when to use em, rem, px(Acc. to developers choice)
+
+    1.rem - for fon-size(coz to make responsive website, if we  
+            use px then we need use more media queries )
+            % - create responsiveness in font-size
+    2.em - for padding and margin(coz to make responsive website)
+    3.px - for border 
+
+    for border we may use anything */
+    
+/*---------------------font-size------------------------------*/
+
+html{
+    font-size: 10px; /* not responsive*/
+    font-size: 62.5%; /* responsivenesss */
+}
+
+h1{
+    font-size: 3rem ; /*i.e 30px*/
+    font-size: 4.8rem; /* i.e 48px*/
+}
+p{
+    font-size: 2rem; /* i.e 20px*/
+}
+
+/* ---------------------padding------------------------------ */
+
+h1{
+    font-size: 2.8rem; /* i.e 28px*/
+    border: 4px solid red;
+    padding: 1em; /* 28px */
+    padding: 1rem; /* 10px */
+}

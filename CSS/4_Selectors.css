@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* class Selector */
+
+.cls{
+    background-color: aliceblue;
+}
+
+
+/* id Selectors */
+#id1{
+    background-color:#cdcdcd;
+}
+/* for id/class we cannot take only numbers */
+
+
+
+/* for paragraphs */
+
+P{
+    color:rgb(137, 9, 241);
+}

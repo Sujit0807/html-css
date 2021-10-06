@@ -1,0 +1,68 @@
+/* parent ke ander more than 2 div */
+
+*{
+    box-sizing: border-box;
+}
+
+.fav-musicians{
+    border: 10px solid red;
+}
+
+
+/* mozart --> beethoven --> bach --> paganini */
+
+.mozart{
+    width: 25%; /* 25% of parent div */
+    float: left;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+}
+
+.beethoven{
+    width: 25%; /* 25% of parent div*/
+    float: left;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.bach{
+    width: 25%; /* 25% of parent div*/
+    float: left;
+    background-color: lightpink;
+    padding: 20px;
+}
+
+.paganini{
+    width: 25%; /*25% of parent div*/
+    float: left;
+    background-color: lightcyan;
+    padding: 20px;
+}
+
+/* .clearfix{
+    clear:both;
+} */
+
+
+
+/* ------------------------------------------------------------
+Trick- to clear float (Harshit)
+------------------------------------------------------------- */
+
+/* Parent div above four div */
+.fav-musicians::after{
+    content: "";
+    display: block; /* by default pseudo elements are inline */
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+

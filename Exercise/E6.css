@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 40px;
+}
+/* ul have auto padding of 40px by default */
+nav{
+    background-color: aliceblue;
+}
+
+nav ul{
+    padding-left: 0px;
+    text-align: center;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px 30px;
+    border-bottom: 2px solid #444;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none; /* very imp */
+}
+
+section h2{
+    border-bottom: 2px solid black;
+}
+

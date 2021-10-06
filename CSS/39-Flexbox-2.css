@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper {
+    border: 10px solid #222;
+    display: flex;
+}
+
+.box {
+    border: 1px solid #666;
+}
+
+.box-1 {
+    background-color: lightblue;
+}
+.box-2 {
+    background-color: lightcoral;
+}
+.box-3 {
+    background-color: lightcyan;
+}
+.box-4 {
+    background-color: lightgreen;
+}
+.box-5 {
+    background-color: lightsalmon;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------------
+ flex-container : flex-wrap : nowrap(default);   --> flex-wrap follows direction of cross-axis  
+                                                     (when we want width greater. for small with it works) 
+-------------------------------------------------------------------------------------------------------------------*/
+
+.box-wrapper {
+    /* Will wrap the things in cross axis i.e top to bottom as our flex-direction is row by default
+       Always remember our cross-axis is perpendicular to main-axis */
+    /* flex-wrap: wrap; */
+
+    /* Will wrap the things in cross axis i.e bottom to up as our flex-direction is row by default
+       Always remember our cross-axis is perpendicular to main-axis */
+    /* flex-wrap: wrap-reverse; */
+
+    /* height: 500px; */
+
+    /* Now our flex-direction is column so main-axis is from top to bottom and our cross axis will be left to right
+       So it will wrap the boxes in  */
+    flex-direction: column;
+    height: 600px;             /* if we set height to 300px then then boxes will overflow */
+    flex-wrap: wrap;           /* if we don't use flex-wrap then it will overflow in vertically */
+                               /* if we use flex-wrap then remaning boxes will go to right diretion */
+
+    /* if we do wrap-reverse then it will go to left direction */
+    flex-wrap: wrap-reverse;
+
+}
+
+.box { 
+    width: 300px;
+    /* height: 300px; */
+}

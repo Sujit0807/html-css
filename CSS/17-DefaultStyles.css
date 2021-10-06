@@ -1,0 +1,31 @@
+/* When we don't want default browser styles e.g padding, margin then use-CSS RESET*/
+/*------------------------------------------------------------*/
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 10px;
+}
+
+p{
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

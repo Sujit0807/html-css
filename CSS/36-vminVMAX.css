@@ -1,0 +1,44 @@
+/* vmin - vh and vw me se jo kam hoga usake size ka 100% size 
+lega.and height ko dega.
+
+vmax - vh and vw me se jo jyada hoga usake size ka 100% size 
+lega.and height ko dega.
+
+steps - 1. vw & vh me se konasa min hai 
+        2. now usake size ka 100% store in height*/
+
+.box{
+    height: 100vmin;
+    height: 100vmax;
+    background: skyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

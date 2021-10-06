@@ -1,0 +1,25 @@
+/* Transitions : It deals with only color change not with start and end */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+
+    /* transition-property: background-color ;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out; */
+
+    /* In one line */
+    /* transition: background-color 1s ease-in-out,     
+                width 500ms ease-in-out,
+                height 1000ms ease-in-out */
+
+    /* for all elements */
+    transition: all 1s ease-in-out
+}
+
+.box:hover {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+

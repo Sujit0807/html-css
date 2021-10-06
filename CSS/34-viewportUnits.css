@@ -1,0 +1,58 @@
+/* Viewport Units : vh, vw, vmin, vmax
+    imp : vh & vw
+
+    viewport width - complete view from left to right on screen
+    viewport height - complete view from top to bottom on screen
+    
+    There is difference between % and vw- below given
+
+*/
+
+h1{
+    border: 2px solid royalblue;
+    width: 500px;
+    width: 50%;
+
+    /* vw(viewport width) -  for width  */
+    width: 50vw; /* view screen width ke 50% width lega  */
+
+}
+
+/* ---------------------------------------------------------- */
+.box{
+    border: 4px ridge red;
+    width: 50%;
+}
+
+h1{
+    /* for % - now this h1 will take width of 50% of its parent i.e div */
+    width: 50%;
+
+    /* Now for vw - it won't consider the parent ki width. it 
+    will add width according to viewport i.e 50% of vp */
+    width: 50vw;
+    width: 70vw;
+
+    /* but we don't use like this ,we will see it later*/
+}
+
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

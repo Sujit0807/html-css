@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper {
+    border: 5px solid #222;
+}
+
+.box {
+    border: 1px solid #666;
+}
+
+.box-1 {
+    background-color: lightblue;
+}
+.box-2 {
+    background-color: lightcoral;
+}
+.box-3 {
+    background-color: lightcyan;
+}
+.box-4 {
+    background-color: lightgreen;
+}
+.box-5 {
+    background-color: lightsalmon;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+flex-items :-  flex-basis : # it looks like width but it is NOT
+                            # flex item ki length main axis ki taraf
+                            # it works like both width and height according to flex-direction
+                            # it always works on main-axis direction
+--------------------------------------------------------------------------------------------------------------------- */
+
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+
+    /* Now let change flex-direction to column means main axis will be vertical top to bottom */
+    flex-direction: column;
+    
+}
+
+.box {
+    /* width: 400px; */
+    
+    /* Making flex-direction make flex-items height as 400px */
+    flex-basis: 400px;
+    width: 500px;
+    /* Now flex-basis has more priority than width and height */
+    height: 500px;
+}

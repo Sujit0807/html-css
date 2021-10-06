@@ -1,0 +1,56 @@
+/* ------------------------------------------------------------
+not - wo sare element jo ki paragraph nahi ki hai.
+         it takes the parameters as- #id, .class, elements
+         But ata hyani body la pn blue color dila jyamule paragpraph ne ti property inherit keli
+--------------------------------------------------------------*/
+:not(p){
+    color:royalblue;
+}
+
+/* so to avoid above conflict */
+body :not(p){
+    color: red;
+}
+
+/* wo sare element jinki class fancy nahi hai */
+body :not(.fancy){
+    background-color: #ddd;
+}
+
+/*--------------------------------------------------------------
+                        :Empty 
+--------------------------------------------------------------*/
+
+/* wo div jo empty hai */
+div:empty{
+    background: #222;
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+/* ----------------------------------------------------------
+                        :root 
+------------------------------------------------------------*/
+/*  1.writing :root and html both are equal
+    2.but root has more specificity than html
+    3.Root is used for creating css variables
+    4.Root element of html is html itself */
+
+:root{
+    background: #333;
+    color: #eee;
+}
+
+html{
+    background: red;
+    color: #eee;
+}
+
+/* we don't use root like this, for above style we use body tag */
+body{
+    background: #333;
+    color: #eee;
+}

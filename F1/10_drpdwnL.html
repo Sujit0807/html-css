@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Dropdown List
+    </title>
+</head>
+
+<body>
+    <form action="../F2/thanks.html" method="GET">
+        <label for="101">username:</label>
+        <input type="text" id="101" placeholder=" enter username" name="username" required>
+        <br><br>
+
+        <label for="102">email:</label>
+        <input type="email" id="102" placeholder="enter email" name="email" equired>
+        <br><br>
+
+        <label for="103">password:</label>
+        <input type="password" id="103" placeholder="enter password" name="password" required>
+
+        <br><br>
+        <p>Enter the Gender</p> <br>
+        <label for="104">Male</label>
+        <input type="radio" name="Gender" id="104" value="Male">
+        <!-- value=" " is used for sending data to backend  -->
+        <br><br>
+        <label for="105">Female</label>
+        <input type="radio" name="Gender" id="105" value="Female">
+        <!-- enter value in name same -->
+        <br><br>
+
+        <label for="106"> Other</label>
+        <input type="radio" name="Gender" id="106" value="other">
+        <br><br>
+
+        <!-- Drop_down list for age groups -->
+
+        <label for="age">Age_group:</label>
+        <select name="age_group_list" id="age">
+            <option value="5-10">5-10</option>
+            <option value="11-20">11-20</option>
+            <option value="21-30">21-30</option>
+            <option value="31-40">31-40</option>
+            <option value="41-50">41-50</option>
+            <option value="50+">50+</option>
+        </select>
+        <br><br>
+        <input type="submit" value="sign in">
+    </form>
+
+</body>
+
+</html>

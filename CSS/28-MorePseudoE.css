@@ -1,0 +1,34 @@
+/* 1.In CSS3 documentation, we have to use double semicolon :: for peseudo elements 
+2.content is inline element
+3.we can't select the pseudo elements
+4.we can use pseudo elements only with those having some conntent
+5.we can't use pseudo elements with images,br,input*/
+
+/* Adding pseudo element in p tag */
+.cool::before{
+    content: 'hello ';
+    color: red;
+    border: 2px dotted blue;
+    display: block;
+    margin-bottom:10px ;
+    padding: 10px;
+}
+
+.cool::after{
+    content: 'hello ';
+    color: red;
+    border: 2px dotted blue;
+    display: block;
+    margin-top:10px ;
+    padding: 10px;
+}
+
+.main-heading::before{
+    content:'Hello ';
+    color:red;
+}
+
+img::before{
+    content: "Hello"; /*hello not added before image*/
+    width: 100px;
+}

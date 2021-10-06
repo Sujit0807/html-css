@@ -1,0 +1,34 @@
+/* When we are priting any page then it will change the color of text to RED */
+@media print{ 
+    body{
+        color: pink;
+    }
+}
+@media screen and (max-width: 500px){   /* only for screen */
+    body{
+        color: blue;
+    }
+}
+
+
+@media all and (max-width: 500px){    /*for all devices*/
+    body{
+        color: green;
+    }
+}
+
+/* or below is like above */
+
+@media (max-width: 500px){
+    body{
+        color: blueviolet;
+    }
+}
+
+/* or */
+
+@media only screen and (max-width: 500px){
+    body{
+        color: red;
+    }
+}

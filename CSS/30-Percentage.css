@@ -1,0 +1,69 @@
+/*  RELATIVE UNITS:
+   1.By using percentages we defines the lengths may border,   
+   width, margin ,font-size. 
+   2.In HTML, bowser gives font-size by default of 16px
+
+   100% == 16px
+   200% == 32px 
+   300% == 48px ,so on.. 
+*/
+
+
+p{ 
+   font-size: 16px;
+   font-size: 100%;
+   font-size: 200%;
+   font-size: 300%;
+}
+
+
+/* ------------------------------------------------------------ 
+but We use like below- (parent ke pixel ka percentage)
+--------------------------------------------------------------- */
+/*div ke ander jo bhi he wo ho jayega 10px ka
+   Here div is parent*/
+div{
+   font-size: 10px;
+}
+/* now this 100% dekhega apne parent ka (for here, 100% == 10px*/
+p{
+   font-size: 100%; /*10px*/
+   font-size: 200%; /*20px*/
+   font-size: 300%; /*30px*/
+}
+
+
+div{
+   font-size: 20px;
+}
+p{
+   font-size:100%; /*20px*/
+   font-size:200%; /*40px*/
+   font-size:300%; /*60px*/
+}
+
+
+/* ------------------------------------------------------------- 
+But Mostly we use percentages for setting the - WIDTH
+---------------------------------------------------------------*/
+
+div{
+   border: 2px solid red;
+   font-size: 20px;
+   /* width: 50%; */
+}
+
+p{
+   border: 2px solid royalblue;
+   width: 50%; /* apne parent ke 50% width */
+   background: skyblue;
+   font-size: 100%;
+   text-align: center;
+
+   margin: 2px auto; 
+/*---------------------- or ---------------------------------- 
+now we have 50% space empty on right side,
+      if we add margin-left of 25% then it will give margin both side equal
+----------------------------------------------------------------*/
+   margin-left:25%;
+}

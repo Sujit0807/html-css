@@ -1,0 +1,39 @@
+/* nth-child - wo p jo apne parent ka nth-child hai(ha p hyachya parent cha nth child ahe ka ?)*/
+p:nth-child(2){
+    color: red;
+}
+
+/* Har dusara child ka color karana hai green*/
+/* or har woh paragraph jo apne parent ke dusare 2nd(Even) child hai */
+p:nth-child(2n){
+    color: indigo;
+}
+/* or */
+p:nth-child(even){
+    color: red;
+}
+
+/* odd or (2n+1) */
+p:nth-child(2n+1){
+    color:royalblue ;
+}
+
+p:nth-child(odd){
+    color:royalblue ;
+}
+
+
+/* ----------------------------------------------------------
+nth-of-type()- wo har paragraph jo apne parent ke 2nd child hai
+------------------------------------------------------------ */
+p:nth-of-type(2){
+    color:royalblue
+}
+
+p:nth-of-type(2n){ /* even */
+    color: red;
+}
+
+p:nth-of-type(2n+1){ /* odd */
+    color:blue;
+}

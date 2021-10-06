@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Task - we want to set h1 at center of container  */
+
+/* steps -  1.jisko apko center me karna hai usko position      
+              dedo absolute and uske parent ko position dedo
+              relative
+*/
+
+
+.container{
+    width : 800px;
+    border: 8px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 500px;
+
+    position: relative;
+    /* he kelyamule h1 ha container chya respect ne position 
+    consider karen */ 
+
+}
+
+.container h1{
+    border: 4px solid red;
+    background: lightyellow;
+    
+    /* width: 500px; */
+
+    position: absolute;
+    /* document flow se bahar hoo jayega and div empty ho 
+    jayega*/
+
+    /* ------------------------------------------------- */
+    /* left: 50px; */
+    /* parent ke respect me 50px left*/
+    /* bottom: 100px; */
+    /* parent ke bottom se 50px up aa jayega*/
+    /* -------------------------------------------------- */
+
+    /* to center this */
+    left: 50%;
+    top: 50%;
+    /* but still it will not at proper center. to do that use transform: translate() property*/
+
+    transform: translate(-50%,-50%);
+    /* (x,y) iske khudake respect me
+        Now will at proper center
+    */
+
+}
+
+.container h3{
+    background: black;
+    color: #fff;
+}
+
+.container p{
+    border: 4px solid purple;
+    background-color: lightgreen;
+}

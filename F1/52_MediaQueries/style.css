@@ -1,0 +1,72 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;
+}
+
+h1{
+    font-size: 10rem;
+}
+
+p{
+    font-size: 5rem;
+}
+
+/* Media queries: 1.For adding responsiveness
+                  2.Always write down media queries below css */
+
+@media(max-width: 500px){    /*this is known as breakpoints(0px-500px)*/
+    html{
+        font-size: 5px;
+    }
+
+    body{
+        background-color: lightcoral;
+    }
+}
+
+/* body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;
+} */
+
+/* Now if we write media queries in between it will be treated
+like normal element and here body has same specificity that's why
+pink color will not applied there,but font-size will be applied  */
+
+@media (min-width: 501px)and (max-width: 768px){ /* 501px-768px*/
+    body{
+        background: lightgoldenrodyellow;
+    }
+}
+@media (min-width: 769px)and (max-width: 1024px){ /* 769px-1024px*/
+    body{
+        background: lightgreen;
+    }
+}
+@media (min-width: 1025px)and (max-width: 1200px){ /* 1025px-1200px*/
+    body{
+        background: lightgrey;
+    }
+}
+@media (min-width: 1201px){ /* 1201px + */
+    body{
+        background: lightskyblue;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

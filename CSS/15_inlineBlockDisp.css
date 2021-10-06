@@ -1,0 +1,20 @@
+/* we have less controls in inline elements like below:*/
+
+/* a{
+    border: 4px ridge red;
+    margin: 50px;
+    padding:50px;
+    height:100px;
+    width:100px;
+} */
+
+
+/* To overcome this use display:inlne-block; */
+a{
+    display: inline-block;
+    border: 4px ridge red;
+    margin: 50px;
+    padding: 50px;
+    height:100px;
+    width:150px
+}

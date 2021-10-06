@@ -1,0 +1,66 @@
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    border-radius: 50%;
+
+    position: relative;
+    /* animation-name: move-around; */
+    /* animation-duration: 3s; */
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: 2; */
+    /* animation-delay: 3s; */
+    
+    /* to slow start of animation */
+    /* animation-timing-function: ease-in; */
+
+    /* to slow end animation */
+    /* animation-timing-function: ease-out; */
+
+    /* to slow start to slow end */
+    /* animation-timing-function: ease-in-out; */
+
+
+    /* WE CAN WRITE ALL ABOVE PROPERTIES IN ONE LINE */
+    /* animation: name duration fill-mode delay timing-func iteration-count */
+
+    animation : move-around 3s forwards 2s ease-in-out 2 ;
+}
+
+
+@keyframes move-around{
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: #000;
+    }
+
+    10%{
+        background-color: lightgreen;
+    }
+
+    25%{
+        top: 0px;
+        left: 300px;
+        background-color: blue;
+    }
+    50%{
+        top: 300px;
+        left: 300px;
+        background-color: red;
+    }
+
+    60% {
+        background-color: orangered;
+    }
+    75%{
+        top: 300px;
+        left: 0px;    
+        background-color: yellow;
+    }
+    100%{
+        top: 0px;
+        left : 0px;
+        background-color: indigo;
+    }
+}

@@ -1,0 +1,25 @@
+/* two types of css units:
+ 1.Absolute unit is fixed
+ 2.Relative unit changes
+
+ Pixels is the css unit and it is absolute.
+ In modern website we uses relative units.
+ Default font size is 16px
+
+ 1 inch == 96px == 2.54 cm
+ 1px  ==  0.75pt
+ 16px == 0.75*16 (12)pt
+
+ but we don't use this in modern websites.
+ */
+p{
+    font-size: 16px;
+    font-size: 32px;
+    font-size: 48px;
+    /* font-size: 96px; */
+    /* font-size: 1in; */
+    font-size: 2.5cm;
+    font-size: 16px;
+    font-size: 12pt;
+    border: 12pt solid red;
+}

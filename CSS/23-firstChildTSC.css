@@ -1,0 +1,29 @@
+/* first-child pseudo classes(see from child)
+jo p tyachya parent cha first child ahe to */
+p:first-child{
+    color: red;
+}
+
+/* first-of-type - te sagale p je parent che first p child ahe or
+iss parent ka pehala p konasa hai(see from parent)*/
+p:first-of-type{
+    color: royalblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+.box-wrapper{
+    border: 2px solid black;
+}
+
+.box1{     /* if i write .box-wrapper .box1, why it is not accessing media queries --> Specificity*/
+    float: left;
+    background-color: #ccc;
+    width: 48%;
+    padding: 10px; 
+}
+.box2{
+    float: right;
+    background-color: #ccc;
+    width: 48%;
+    padding: 10px;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media (max-width: 1024px){ 
+    .box1, .box2{
+        float: none;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

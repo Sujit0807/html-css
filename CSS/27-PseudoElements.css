@@ -1,0 +1,32 @@
+/*Pseudo Elements- 1.use for kisi element ke particular part ko 
+                     styling ke liye.
+                   2.first-letter and first-line pseudo 
+                   elements works with block level elements 
+                   only 
+*/
+
+/* sabhi paragraph ke first letter ka font increase karna hai */
+p::first-letter{
+    font-size: 32px;
+}
+
+p::first-line{
+    font-size: 32px;
+}
+
+/* apan copy paste karatani word jase select karato tya time la */
+p::selection{
+    background-color: black;
+    color:white ;
+}
+
+h1::selection{
+    background: aliceblue;
+    color: red;
+}
+
+/* for all elements */
+::selection{
+    background: rosybrown;
+    color: darkred;
+}

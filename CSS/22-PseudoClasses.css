@@ -1,0 +1,13 @@
+/* Pseudo Classes with input Fields */
+
+input:focus{
+    padding: 20px;
+    outline: none;
+    border: 4px ridge green;
+}
+
+/* Now How to target required input fields */
+
+input:required{
+    color: red;
+}
